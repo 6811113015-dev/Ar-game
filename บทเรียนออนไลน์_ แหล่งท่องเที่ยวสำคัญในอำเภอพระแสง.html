@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)file:///C:/Users/NEXT%20Speed/Downloads/single_page_online_learning_website.html -->
+<html lang="th"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทเรียนออนไลน์: แหล่งท่องเที่ยวสำคัญในอำเภอพระแสง</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./บทเรียนออนไลน์_ แหล่งท่องเที่ยวสำคัญในอำเภอพระแสง_files/css2" rel="stylesheet">
+    <style>
+        /* CSS Reset & Variable Definitions */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans Thai', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :root {
+            --bg-color: #FFF8D6;
+            --primary: #2E7D32;
+            --primary-light: #4CAF50;
+            --accent-yellow: #FFD54F;
+            --accent-blue: #0288D1;
+            --accent-pink: #EC407A;
+            --text-dark: #2C3E50;
+            --text-light: #546E7A;
+            --glass-bg: rgba(255, 255, 255, 0.55);
+            --glass-border: rgba(255, 255, 255, 0.7);
+            --glass-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --card-radius: 20px;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Animated Cloud Background Elements */
+        .bg-clouds {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .cloud {
+            position: absolute;
+            font-size: 3rem;
+            opacity: 0.65;
+            user-select: none;
+            animation: floatCloud linear infinite;
+        }
+
+        .cloud:nth-child(1) { top: 8%; left: -10%; animation-duration: 38s; font-size: 3.5rem; }
+        .cloud:nth-child(2) { top: 25%; left: -15%; animation-duration: 48s; animation-delay: 5s; font-size: 2.5rem; }
+        .cloud:nth-child(3) { top: 55%; left: -12%; animation-duration: 42s; animation-delay: 12s; font-size: 4rem; }
+        .cloud:nth-child(4) { top: 78%; left: -10%; animation-duration: 35s; animation-delay: 2s; font-size: 3rem; }
+
+        @keyframes floatCloud {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(115vw); }
+        }
+
+        /* Decorative background elements */
+        .floating-emoji {
+            position: fixed;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.25;
+            animation: floatBounce 6s ease-in-out infinite alternate;
+        }
+        .fe-1 { top: 12%; right: 4%; font-size: 2.5rem; animation-delay: 0s; }
+        .fe-2 { bottom: 15%; left: 3%; font-size: 3rem; animation-delay: 1.5s; }
+        .fe-3 { top: 60%; right: 5%; font-size: 2.2rem; animation-delay: 3s; }
+
+        @keyframes floatBounce {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(-18px) rotate(8deg); }
+        }
+
+        /* Layout & Container */
+        .app-container {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Glassmorphism Styles */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            border-radius: var(--card-radius);
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        /* Shimmer Effect for Text Cards */
+        .text-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .text-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 35%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.45),
+                transparent
+            );
+            animation: shine 10s infinite;
+            pointer-events: none;
+        }
+
+        @keyframes shine {
+            0% { left: -100%; }
+            20% { left: 120%; }
+            100% { left: 120%; }
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 16px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            outline: none;
+            text-decoration: none;
+            user-select: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+
+        .btn:hover:not(:disabled) {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        .btn:active:not(:disabled) {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-primary:hover:not(:disabled) { background: #256628; }
+
+        .btn-secondary { background: var(--accent-blue); color: white; }
+        .btn-secondary:hover:not(:disabled) { background: #0277BD; }
+
+        .btn-danger { background: var(--accent-pink); color: white; }
+        .btn-danger:hover:not(:disabled) { background: #D81B60; }
+
+        .btn:disabled {
+            opacity: 0.55;
+            cursor: not-allowed;
+            transform: none !important;
+            box-shadow: none !important;
+        }
+
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 10px;
+            z-index: 100;
+            margin-bottom: 20px;
+        }
+
+        .header-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 16px 24px;
+            background: rgba(255, 255, 255, 0.75);
+        }
+
+        .header-title-box h1 {
+            font-size: 1.25rem;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .header-title-box p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .user-status-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .user-badge {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(0,0,0,0.06);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Navigation Bar */
+        .nav-bar {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 6px 4px 12px 4px;
+            margin-bottom: 15px;
+            scrollbar-width: thin;
+        }
+
+        .nav-item {
+            flex: 1;
+            min-width: 140px;
+            text-align: center;
+            padding: 12px 10px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 16px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            cursor: pointer;
+            border: 1px solid var(--glass-border);
+            transition: all 0.25s ease;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .nav-item:hover:not(.locked) {
+            background: white;
+            transform: translateY(-2px);
+        }
+
+        .nav-item.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            box-shadow: 0 6px 18px rgba(46, 125, 50, 0.25);
+        }
+
+        .nav-item.locked {
+            opacity: 0.6;
+            cursor: not-allowed;
+            background: rgba(200, 200, 200, 0.3);
+            border-color: rgba(0, 0, 0, 0.05);
+        }
+
+        /* Section View Visibility */
+        .view-section {
+            display: none;
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+
+        .view-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Login Screen */
+        .welcome-screen {
+            max-width: 520px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .welcome-hero {
+            font-size: 4rem;
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .welcome-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .welcome-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .welcome-meta {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 25px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .input-control {
+            width: 100%;
+            padding: 14px 18px;
+            border-radius: 14px;
+            border: 2px solid rgba(0,0,0,0.1);
+            background: rgba(255, 255, 255, 0.85);
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .input-control:focus {
+            border-color: var(--primary-light);
+            background: white;
+        }
+
+        /* Test / Quiz Styles */
+        .quiz-card {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .quiz-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+
+        .quiz-timer {
+            font-weight: 700;
+            color: #E65100;
+            background: #FFF3E0;
+            padding: 6px 16px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 1.05rem;
+            animation: pulse 1s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.03); }
+        }
+
+        .question-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        .options-grid {
+            display: grid;
+            gap: 12px;
+        }
+
+        .option-btn {
+            text-align: left;
+            padding: 16px 20px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.85);
+            border: 2px solid transparent;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .option-btn:hover {
+            background: white;
+            border-color: var(--primary-light);
+            transform: translateX(4px);
+        }
+
+        .option-btn .opt-badge {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        /* Lesson Tab Styles */
+        .tabs-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(0,0,0,0.05);
+            padding-bottom: 10px;
+        }
+
+        .tab-btn {
+            padding: 12px 20px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid var(--glass-border);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.25s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            box-shadow: 0 4px 15px rgba(46, 125, 50, 0.2);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .info-card h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.1rem;
+        }
+
+        .info-card p, .info-card ul {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        .info-card ul {
+            padding-left: 20px;
+        }
+
+        /* Interactive Game Styles */
+        .game-board {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 650px) {
+            .game-board {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .draggable-item, .drop-target {
+            padding: 16px;
+            border-radius: 16px;
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.25s ease;
+            user-select: none;
+        }
+
+        .draggable-item {
+            background: white;
+            border: 2px dashed var(--primary-light);
+            cursor: grab;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+        }
+
+        .draggable-item:active {
+            cursor: grabbing;
+        }
+
+        .draggable-item.selected {
+            background: var(--accent-yellow);
+            border-style: solid;
+            transform: scale(1.02);
+        }
+
+        .draggable-item.matched {
+            opacity: 0.4;
+            pointer-events: none;
+            background: #E8F5E9;
+            border-color: #81C784;
+        }
+
+        .drop-target {
+            background: rgba(255, 255, 255, 0.6);
+            border: 2px dashed #B0BEC5;
+            position: relative;
+        }
+
+        .drop-target.hovered {
+            background: rgba(225, 245, 254, 0.9);
+            border-color: var(--accent-blue);
+        }
+
+        .drop-target.correct {
+            background: #E8F5E9;
+            border: 2px solid #4CAF50;
+            color: #2E7D32;
+        }
+
+        .drop-target.incorrect {
+            background: #FFEBEE;
+            border: 2px solid #EF5350;
+            animation: shake 0.4s ease;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-6px); }
+            40%, 80% { transform: translateX(6px); }
+        }
+
+        /* Results View */
+        .results-summary {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .score-comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .score-box {
+            background: rgba(255, 255, 255, 0.75);
+            padding: 20px;
+            border-radius: 18px;
+            border: 1px solid white;
+        }
+
+        .score-box .num {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 10px 0;
+        }
+
+        .growth-badge {
+            display: inline-block;
+            background: #E8F5E9;
+            color: #2E7D32;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            border: 1px solid #A5D6A7;
+        }
+
+        .progress-bar-container {
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .progress-bar-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .progress-track {
+            height: 16px;
+            background: rgba(0,0,0,0.08);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #81C784, #2E7D32);
+            border-radius: 10px;
+            width: 0%;
+            transition: width 1s ease-out;
+        }
+
+        .progress-fill.post {
+            background: linear-gradient(90deg, #64B5F6, #0288D1);
+        }
+
+        .quality-rating {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        /* Custom Modal / Dialog */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.25s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-card {
+            background: white;
+            padding: 28px;
+            border-radius: 20px;
+            max-width: 420px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            transform: scale(0.9);
+            transition: transform 0.25s ease;
+        }
+
+        .modal-overlay.active .modal-card {
+            transform: scale(1);
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Toast Messages */
+        .toast {
+            position: fixed;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: rgba(44, 62, 80, 0.95);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            z-index: 1100;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            pointer-events: none;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: stretch;
+                text-align: center;
+            }
+            .header-title-box h1 {
+                justify-content: center;
+            }
+            .user-status-box {
+                justify-content: center;
+            }
+            .nav-bar {
+                justify-content: flex-start;
+            }
+            .nav-item {
+                font-size: 0.85rem;
+                padding: 10px 8px;
+                min-width: 120px;
+            }
+            .score-comparison-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Cloud Layer -->
+    <div class="bg-clouds">
+        <div class="cloud">☁️</div>
+        <div class="cloud">☁️</div>
+        <div class="cloud">☁️</div>
+        <div class="cloud">☁️</div>
+    </div>
+
+    <!-- Floating Emojis -->
+    <div class="floating-emoji fe-1">🌴</div>
+    <div class="floating-emoji fe-2">🌊</div>
+    <div class="floating-emoji fe-3">📷</div>
+
+    <div class="app-container">
+        <!-- Sticky Main Header (Visible when logged in) -->
+        <header id="mainHeader" style="display: none;">
+            <div class="glass-card header-content">
+                <div class="header-title-box">
+                    <h1>🌴 บทเรียนออนไลน์: แหล่งท่องเที่ยวอำเภอพระแสง</h1>
+                    <p>วิชาเทคโนโลยีเพื่อการศึกษา • นักศึกษาระดับปริญญาตรี ชั้นปีที่ 1</p>
+                </div>
+                <div class="user-status-box">
+                    <div class="user-badge">
+                        👩‍🎓 <span id="headerStudentName">-</span>
+                    </div>
+                    <div class="user-badge" style="color: var(--primary);">
+                        ⭐ คะแนน: <span id="headerScore">0</span>/20
+                    </div>
+                    <button class="btn btn-danger" style="padding: 8px 16px; font-size: 0.85rem;" onclick="confirmLogout()">
+                        ออกจากระบบ 🚪
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Navigation Bar -->
+        <nav id="mainNav" class="nav-bar" style="display: none;">
+            <div class="nav-item active" onclick="switchNav('pretest')" id="nav-pretest">
+                📝 แบบทดสอบก่อนเรียน
+            </div>
+            <div class="nav-item locked" onclick="switchNav('lessons')" id="nav-lessons">
+                🔒 📚 เนื้อหาความรู้
+            </div>
+            <div class="nav-item locked" onclick="switchNav('game')" id="nav-game">
+                🔒 🎮 เกมโต้ตอบ
+            </div>
+            <div class="nav-item locked" onclick="switchNav('posttest')" id="nav-posttest">
+                🔒 📝 แบบทดสอบหลังเรียน
+            </div>
+            <div class="nav-item locked" onclick="switchNav('results')" id="nav-results">
+                🔒 📊 ผลการเรียนรู้
+            </div>
+        </nav>
+
+        <!-- VIEW 1: LOGIN / WELCOME SCREEN -->
+        <section id="view-login" class="view-section active">
+            <div class="glass-card welcome-screen text-card">
+                <div class="welcome-hero">👩‍🎒 🧳 📷 📍</div>
+                <h1 class="welcome-title">บทเรียนออนไลน์</h1>
+                <h2 class="welcome-subtitle">แหล่งท่องเที่ยวสำคัญในอำเภอพระแสง</h2>
+                <p class="welcome-meta">
+                    วิชาเทคโนโลยีเพื่อการศึกษา<br>
+                    นักศึกษาระดับปริญญาตรี ชั้นปีที่ 1
+                </p>
+
+                <div class="input-group">
+                    <label for="studentNameInput">ชื่อ–นามสกุล ผู้เรียน:</label>
+                    <input type="text" id="studentNameInput" class="input-control" placeholder="กรุณากรอกชื่อ-นามสกุล เช่น สมชาย ใจดี" autocomplete="off">
+                </div>
+
+                <button class="btn btn-primary" style="width: 100%; padding: 14px; font-size: 1.1rem;" onclick="handleLogin()">
+                    เข้าสู่บทเรียน 🚀
+                </button>
+            </div>
+        </section>
+
+        <!-- VIEW 2: PRE-TEST SCREEN -->
+        <section id="view-pretest" class="view-section">
+            <div class="glass-card quiz-card text-card">
+                <div class="quiz-header">
+                    <div>
+                        <span style="font-weight: 700; color: var(--primary);">📝 แบบทดสอบก่อนเรียน</span>
+                        <div id="pretestProgressText" style="font-size: 0.85rem; color: var(--text-light);">ข้อที่ 1 จาก 10</div>
+                    </div>
+                    <div class="quiz-timer">
+                        ⏱️ <span id="pretestTimer">20</span> วินาที
+                    </div>
+                </div>
+
+                <div id="pretestQuestionArea">
+                    <h3 class="question-text" id="pretestQuestionText">กำลังโหลดคำถาม...</h3>
+                    <div class="options-grid" id="pretestOptionsContainer">
+                        <!-- Options injected dynamically -->
+                    </div>
+                </div>
+
+                <div id="pretestCompletedArea" style="display: none; text-align: center; padding: 20px 0;">
+                    <div style="font-size: 3.5rem; margin-bottom: 10px;">🎉</div>
+                    <h2 style="color: var(--primary); margin-bottom: 10px;">ทำแบบทดสอบก่อนเรียนเสร็จแล้ว!</h2>
+                    <p style="color: var(--text-light); margin-bottom: 20px;">
+                        คุณได้ทำแบบทดสอบครบทั้ง 10 ข้อเรียบร้อยแล้ว<br>
+                        ระบบได้ปลดล็อกเนื้อหาบทเรียนและส่วนอื่น ๆ ให้ท่านแล้ว
+                    </p>
+                    <button class="btn btn-primary" onclick="switchNav('lessons')">
+                        เข้าสู่เนื้อหาความรู้ 📚
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW 3: KNOWLEDGE CONTENT (LESSONS) -->
+        <section id="view-lessons" class="view-section">
+            <div class="glass-card text-card">
+                <div class="tabs-container">
+                    <button class="tab-btn active" onclick="switchTab('tab1')">
+                        🌊 อ่างน้ำผุดบางสวรรค์
+                    </button>
+                    <button class="tab-btn" onclick="switchTab('tab2')">
+                        🌳 ป่าต้นน้ำบ้านน้ำราด
+                    </button>
+                </div>
+
+                <!-- TAB 1 CONTENT -->
+                <div id="tab1" class="tab-content active">
+                    <div style="margin-bottom: 15px;">
+                        <h2 style="color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                            🌊 อ่างน้ำผุดบางสวรรค์ (Bang Sawan Spring)
+                        </h2>
+                        <p style="color: var(--text-light); font-size: 0.95rem; margin-top: 4px;">
+                            มหัศจรรย์สายน้ำผุดธรรมชาติ ใสสะอาดกลางผืนป่าแห่งอำเภอพระแสง
+                        </p>
+                    </div>
+
+                    <div class="content-grid">
+                        <div class="info-card">
+                            <h4>💧 ลักษณะของแหล่งท่องเที่ยว</h4>
+                            <p>เป็นสระน้ำธรรมชาติขนาดใหญ่ที่มีน้ำผุดขึ้นมาจากใต้ดินตลอดทั้งปี น้ำมีความใสสะอาดจนมองเห็นพื้นทรายและพรรณไม้น้ำด้านล่างอย่างชัดเจน แวดล้อมด้วยต้นไม้น้อยใหญ่อันร่มรื่น</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>✨ จุดเด่นและความสำคัญ</h4>
+                            <p>มีเฉดสีของน้ำเป็นสีฟ้าเขียวมรกตที่สวยงาม เกิดจากชั้นหินปูนใต้ดินตามธรรมชาติ เป็นแหล่งพักผ่อนหย่อนใจสำคัญของชุมชน และเป็นแหล่งศึกษา生態วิทยาทางน้ำที่สมบูรณ์</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>📸 สิ่งที่นักท่องเที่ยวสามารถเรียนรู้</h4>
+                            <ul>
+                                <li>ปรากฏการณ์น้ำผุดทางธรณีวิทยา</li>
+                                <li>ระบบนิเวศแหล่งน้ำชีวภาพ</li>
+                                <li>ความหลากหลายทางชีวภาพของพืชน้ำ</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h4>🏞️ แนวทางการท่องเที่ยวอย่างรับผิดชอบ</h4>
+                            <ul>
+                                <li>ไม่นำถุงพลาสติกหรือขยะลงในบริเวณสระน้ำ</li>
+                                <li>งดเว้นการใช้สบู่หรือแชมพูลงในแหล่งน้ำผุด</li>
+                                <li>ปฏิบัติตามกฎระเบียบของชุมชนอย่างเคร่งครัด</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2 CONTENT -->
+                <div id="tab2" class="tab-content">
+                    <div style="margin-bottom: 15px;">
+                        <h2 style="color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                            🌳 ป่าต้นน้ำบ้านน้ำราด (Nam Rad Headwater Forest)
+                        </h2>
+                        <p style="color: var(--text-light); font-size: 0.95rem; margin-top: 4px;">
+                            แหล่งตาน้ำบริสุทธิ์ผุดกลางป่าพรุ ความงามแห่งธรรมชาติที่ต้องร่วมกันรักษา
+                        </p>
+                    </div>
+
+                    <div class="content-grid">
+                        <div class="info-card">
+                            <h4>🍃 ลักษณะของป่าต้นน้ำ</h4>
+                            <p>เป็นตาน้ำผุดขนาดเล็กที่ซ่อนตัวอยู่กลางป่าพรุ มีน้ำใสบริสุทธิ์ราวกับกระจก สามารถมองเห็นก้อนหิน พื้นทราย และรากไม้ใต้ผิวน้ำได้อย่างตระการตา</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>💦 ความสำคัญต่อระบบนิเวศ</h4>
+                            <p>ทำหน้าที่เป็นต้นน้ำลำธาร คอยกรองน้ำธรรมชาติบริสุทธิ์หล่อเลี้ยงชุมชนและพื้นที่เกษตรกรรมรอบข้าง พร้อมทั้งเป็นถิ่นที่อยู่อาศัยของสัตว์น้ำและนกนานาชนิด</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>🚣 กิจกรรมที่สามารถเรียนรู้</h4>
+                            <ul>
+                                <li>พายเรือคายัคชมความสมบูรณ์ของป่าพรุ</li>
+                                <li>ศึกษาเส้นทางธรรมชาติและพันธุ์ไม้ป่าพรุ</li>
+                                <li>สังเกตพฤติกรรมสัตว์ป่าและนกท้องถิ่น 🐦</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h4>🌱 การอนุรักษ์ธรรมชาติอย่างยั่งยืน</h4>
+                            <ul>
+                                <li>ห้ามทิ้งขยะและสิ่งปฏิกูลทุกชนิด</li>
+                                <li>จำกัดจำนวนนักท่องเที่ยวต่อวันเพื่อลดผลกระทบ</li>
+                                <li>ช่วยกันสอดส่องและฟื้นฟูสภาพแวดล้อมป่าพรุ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW 4: INTERACTIVE MATCHING GAME -->
+        <section id="view-game" class="view-section">
+            <div class="glass-card text-card">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <h2 style="color: var(--primary);">🧩 เกมจับคู่สถานที่ท่องเที่ยวพระแสง</h2>
+                    <p style="color: var(--text-light); font-size: 0.95rem;">
+                        คำชี้แจง: ลากชื่อสถานที่ด้านซ้าย ไปวางให้ตรงกับลักษณะเด่นด้านขวา (หรือแตะเลือกลากได้บนมือถือ)
+                    </p>
+                </div>
+
+                <div class="game-board">
+                    <!-- Left Items (Draggable) -->
+                    <div id="dragItemsContainer" style="display: flex; flex-direction: column; gap: 12px;">
+                        <!-- Draggables injected here -->
+                    </div>
+
+                    <!-- Right Targets (Drop) -->
+                    <div id="dropTargetsContainer" style="display: flex; flex-direction: column; gap: 12px;">
+                        <!-- Targets injected here -->
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 25px;">
+                    <div id="gameScoreText" style="font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 12px;">
+                        คะแนนเกม: 0 / 4
+                    </div>
+                    <button class="btn btn-secondary" onclick="resetGame()">
+                        🔄 เริ่มเกมใหม่
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW 5: POST-TEST SCREEN -->
+        <section id="view-posttest" class="view-section">
+            <div class="glass-card quiz-card text-card">
+                <div class="quiz-header">
+                    <div>
+                        <span style="font-weight: 700; color: var(--primary);">📝 แบบทดสอบหลังเรียน</span>
+                        <div id="posttestProgressText" style="font-size: 0.85rem; color: var(--text-light);">ข้อที่ 1 จาก 10</div>
+                    </div>
+                    <div class="quiz-timer">
+                        ⏱️ <span id="posttestTimer">20</span> วินาที
+                    </div>
+                </div>
+
+                <div id="posttestQuestionArea">
+                    <h3 class="question-text" id="posttestQuestionText">กำลังโหลดคำถาม...</h3>
+                    <div class="options-grid" id="posttestOptionsContainer">
+                        <!-- Options injected dynamically -->
+                    </div>
+                </div>
+
+                <div id="posttestCompletedArea" style="display: none; text-align: center; padding: 20px 0;">
+                    <div style="font-size: 3.5rem; margin-bottom: 10px;">🌟</div>
+                    <h2 style="color: var(--primary); margin-bottom: 10px;">ทำแบบทดสอบหลังเรียนเสร็จแล้ว!</h2>
+                    <p style="color: var(--text-light); margin-bottom: 20px;">
+                        คุณได้ทำแบบทดสอบหลังเรียนครบทั้ง 10 ข้อเรียบร้อยแล้ว<br>
+                        ไปดูผลการเรียนรู้และพัฒนาการของคุณกันเลย!
+                    </p>
+                    <button class="btn btn-primary" onclick="switchNav('results')">
+                        ดูผลการเรียนรู้ 📊
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW 6: LEARNING RESULTS -->
+        <section id="view-results" class="view-section">
+            <div class="glass-card text-card results-summary">
+                <h2 style="color: var(--primary); margin-bottom: 6px;">📊 ผลการเรียนรู้และพัฒนาการ</h2>
+                <p style="color: var(--text-light); margin-bottom: 20px;">
+                    👩‍🎓 ผู้เรียน: <span id="resStudentName" style="font-weight: 700; color: var(--text-dark);">-</span>
+                </p>
+
+                <div class="score-comparison-grid">
+                    <div class="score-box">
+                        <div style="font-weight: 600; color: var(--text-light);">แบบทดสอบก่อนเรียน</div>
+                        <div class="num" id="resPreScore">0 / 10</div>
+                        <div class="progress-bar-container">
+                            <div class="progress-track">
+                                <div class="progress-fill" id="barPreScore"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="score-box">
+                        <div style="font-weight: 600; color: var(--text-light);">แบบทดสอบหลังเรียน</div>
+                        <div class="num" id="resPostScore">0 / 10</div>
+                        <div class="progress-bar-container">
+                            <div class="progress-track">
+                                <div class="progress-fill post" id="barPostScore"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="resGrowthBadge" class="growth-badge">
+                    พัฒนาการ: +0 คะแนน
+                </div>
+
+                <div style="background: rgba(255,255,255,0.8); padding: 20px; border-radius: 16px; margin-bottom: 20px;">
+                    <div style="font-size: 0.95rem; color: var(--text-light); margin-bottom: 4px;">ระดับคุณภาพ</div>
+                    <div class="quality-rating" id="resQualityGrade">-</div>
+                    <p id="resFeedbackMsg" style="color: var(--text-dark); font-size: 0.95rem; line-height: 1.5; margin-top: 8px;">
+                        -
+                    </p>
+                </div>
+
+                <div style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 20px;">
+                    🎮 คะแนนเกมจับคู่: <span id="resGameScore" style="font-weight: 700; color: var(--primary);">0</span> / 4 คะแนน
+                </div>
+
+                <button class="btn btn-secondary" onclick="window.print()">
+                    🖨️ พิมพ์ผลการเรียนรู้
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Custom Logout Modal -->
+    <div class="modal-overlay" id="logoutModal">
+        <div class="modal-card">
+            <div style="font-size: 3rem; margin-bottom: 10px;">🚪</div>
+            <h3 style="margin-bottom: 10px; color: var(--text-dark);">ยืนยันการออกจากระบบ</h3>
+            <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.5;">
+                ต้องการออกจากระบบและล้างข้อมูลการเรียนทั้งหมดหรือไม่?
+            </p>
+            <div class="modal-actions">
+                <button class="btn" style="background: #ECEFF1; color: var(--text-dark);" onclick="closeLogoutModal()">
+                    ยกเลิก
+                </button>
+                <button class="btn btn-danger" onclick="executeLogout()">
+                    ยืนยันออกจากระบบ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast">⚠️ กรุณากรอกชื่อ–นามสกุล ก่อนเข้าสู่บทเรียน</div>
+
+    <script>
+        // ==========================================
+        // APP STATE & CONSTANTS
+        // ==========================================
+        const QUESTIONS_BASE = [
+            {
+                id: 1,
+                question: "แหล่งท่องเที่ยว 'อ่างน้ำผุดบางสวรรค์' มีลักษณะเด่นอย่างไร?",
+                options: [
+                    "สระน้ำธรรมชาติที่มีน้ำผุดสีเขียวมรกตใสสะอาด",
+                    "น้ำตกสูงเจ็ดชั้นกลางป่าดิบชื้น",
+                    "หาดทรายขาวริมแม่น้ำตาปี",
+                    "ถ้ำหินปูนที่มีหินงอกหินย้อย"
+                ],
+                answer: 0
+            },
+            {
+                id: 2,
+                question: "ข้อใดเป็นจุดเด่นสำคัญของ 'ป่าต้นน้ำบ้านน้ำราด'?",
+                options: [
+                    "ตาน้ำผุดใสบริสุทธิ์กลางป่าพรุ",
+                    "ยอดเขาสูงสำหรับชมทะเลหมอก",
+                    "เกาะกลางแม่น้ำขนาดใหญ่",
+                    "บ่อน้ำพุร้อนธรรมชาติ"
+                ],
+                answer: 0
+            },
+            {
+                id: 3,
+                question: "สีของน้ำในอ่างน้ำผุดบางสวรรค์เกิดจากปัจจัยใดตามธรรมชาติ?",
+                options: [
+                    "ชั้นหินปูนใต้ดินตามธรรมชาติ",
+                    "การใส่สารเคมีปรับสภาพน้ำ",
+                    "เงาสะท้อนของท้องฟ้าเท่านั้น",
+                    "การเจริญเติบโตของตะไคร่น้ำ"
+                ],
+                answer: 0
+            },
+            {
+                id: 4,
+                question: "กิจกรรมใดที่นิยมและเหมาะสมเมื่อไปเยือนป่าต้นน้ำบ้านน้ำราด?",
+                options: [
+                    "พายเรือคายัคชมธรรมชาติป่าพรุ",
+                    "การขับรถวิบากข้ามลำธาร",
+                    "การตั้งแคมป์เผาป่าทำอาหาร",
+                    "การเล่นเจ็ตสกีความเร็วสูง"
+                ],
+                answer: 0
+            },
+            {
+                id: 5,
+                question: "การปฏิบัติตนข้อใดเป็นการท่องเที่ยวอย่างรับผิดชอบ ณ แหล่งน้ำผุด?",
+                options: [
+                    "ไม่ทิ้งขยะและไม่ใช้สบู่แชมพูลงในแหล่งน้ำ",
+                    "นำอาหารลงไปรับประทานในสระน้ำ",
+                    "เก็บพรรณไม้น้ำกลับบ้านเป็นของที่ระลึก",
+                    "จับปลาธรรมชาติขึ้นมาถ่ายภาพ"
+                ],
+                answer: 0
+            },
+            {
+                id: 6,
+                question: "ทั้งอ่างน้ำผุดบางสวรรค์และป่าต้นน้ำบ้านน้ำราด ตั้งอยู่ในอำเภอใดของจังหวัดสุราษฎร์ธานี?",
+                options: [
+                    "อำเภอพระแสง",
+                    "อำเภอพนม",
+                    "อำเภอบ้านตาขุน",
+                    "อำเภอเกาะสมุย"
+                ],
+                answer: 0
+            },
+            {
+                id: 7,
+                question: "ป่าต้นน้ำบ้านน้ำราดมีความสำคัญต่อระบบนิเวศอย่างไร?",
+                options: [
+                    "เป็นต้นน้ำลำธารกรองน้ำบริสุทธิ์หล่อเลี้ยงชุมชน",
+                    "เป็นพื้นที่กักเก็บขยะของจังหวัด",
+                    "เป็นแหล่งทำอุตสาหกรรมไม้ยางพารา",
+                    "เป็นเขตทำการเกษตรเชิงเดี่ยวขนาดใหญ่"
+                ],
+                answer: 0
+            },
+            {
+                id: 8,
+                question: "ลักษณะเด่นของน้ำในป่าต้นน้ำบ้านน้ำราดคือข้อใด?",
+                options: [
+                    "ใสมองเห็นพื้นทรายและรากไม้ได้อย่างชัดเจน",
+                    "เป็นน้ำขุ่นสีน้ำตาลเนื่องจากโคลน",
+                    "เป็นน้ำเค็มจากทะเลอ่าวไทย",
+                    "เป็นน้ำร้อนอุณหภูมิสูงเกิน 80 องศา"
+                ],
+                answer: 0
+            },
+            {
+                id: 9,
+                question: "ข้อใดเป็นแนวทางการอนุรักษ์ป่าต้นน้ำบ้านน้ำราดอย่างยั่งยืน?",
+                options: [
+                    "จำกัดจำนวนนักท่องเที่ยวและดูแลขยะเข้มงวด",
+                    "ขยายพื้นที่จอดรถโดยตัดต้นไม้รอบป่า",
+                    "เทคอนกรีตทับบริเวณตาน้ำผุด",
+                    "เปิดให้เดินเรือเครื่องยนต์ตลอด 24 ชั่วโมง"
+                ],
+                answer: 0
+            },
+            {
+                id: 10,
+                question: "การศึกษาเรียนรู้เกี่ยวกับพรรณไม้น้ำและระบบนิเวศในบทเรียนนี้ตรงกับวิชาใด?",
+                options: [
+                    "เทคโนโลยีเพื่อการศึกษา",
+                    "คณิตศาสตร์ประยุกต์",
+                    "ภาษาต่างประเทศ",
+                    "นาฏศิลป์ไทย"
+                ],
+                answer: 0
+            }
+        ];
+
+        const MATCHING_DATA = [
+            { id: 1, name: "🌊 อ่างน้ำผุดบางสวรรค์", targetText: "💧 สระน้ำธรรมชาติสีเขียวมรกต เกิดจากชั้นหินปูน" },
+            { id: 2, name: "🌳 ป่าต้นน้ำบ้านน้ำราด", targetText: "🍃 ตาน้ำผุดบริสุทธิ์กลางป่าพรุ พายเรือคายัคชมธรรมชาติ" },
+            { id: 3, name: "🏞️ ระบบนิเวศป่าพรุ", targetText: "🐦 ถิ่นที่อยู่อาศัยของนกและกรองน้ำธรรมชาติ" },
+            { id: 4, name: "📸 การท่องเที่ยวรับผิดชอบ", targetText: "🚯 งดทิ้งขยะ ไม่ใช้สารเคมีในแหล่งน้ำผุด" }
+        ];
+
+        let state = {
+            studentName: "",
+            preTestCompleted: false,
+            preTestScore: 0,
+            postTestCompleted: false,
+            postTestScore: 0,
+            gameScore: 0,
+            currentPreIndex: 0,
+            currentPostIndex: 0,
+            preQuestions: [],
+            postQuestions: [],
+            timerInterval: null,
+            timerValue: 20
+        };
+
+        // ==========================================
+        // INITIALIZATION & LOCALSTORAGE
+        // ==========================================
+        window.addEventListener('DOMContentLoaded', () => {
+            loadLocalStorage();
+            initApp();
+        });
+
+        function loadLocalStorage() {
+            state.studentName = localStorage.getItem('studentName') || '';
+            state.preTestCompleted = localStorage.getItem('preTestCompleted') === 'true';
+            state.preTestScore = parseInt(localStorage.getItem('preTestScore') || '0', 10);
+            state.postTestCompleted = localStorage.getItem('postTestCompleted') === 'true';
+            state.postTestScore = parseInt(localStorage.getItem('postTestScore') || '0', 10);
+            state.gameScore = parseInt(localStorage.getItem('gameScore') || '0', 10);
+        }
+
+        function saveLocalStorage() {
+            localStorage.setItem('studentName', state.studentName);
+            localStorage.setItem('preTestCompleted', state.preTestCompleted);
+            localStorage.setItem('preTestScore', state.preTestScore);
+            localStorage.setItem('postTestCompleted', state.postTestCompleted);
+            localStorage.setItem('postTestScore', state.postTestScore);
+            localStorage.setItem('gameScore', state.gameScore);
+        }
+
+        function initApp() {
+            if (state.studentName) {
+                // User is logged in
+                document.getElementById('headerStudentName').textContent = state.studentName;
+                document.getElementById('mainHeader').style.display = 'block';
+                document.getElementById('mainNav').style.display = 'flex';
+                updateHeaderScore();
+                updateLockState();
+
+                if (!state.preTestCompleted) {
+                    switchNav('pretest');
+                    startPreTest();
+                } else {
+                    switchNav('lessons');
+                }
+            } else {
+                // Show login screen
+                document.getElementById('mainHeader').style.display = 'none';
+                document.getElementById('mainNav').style.display = 'none';
+                switchView('view-login');
+            }
+        }
+
+        function updateHeaderScore() {
+            const total = state.preTestScore + state.postTestScore;
+            document.getElementById('headerScore').textContent = total;
+        }
+
+        function updateLockState() {
+            const unlocked = state.preTestCompleted;
+            const navs = ['nav-lessons', 'nav-game', 'nav-posttest', 'nav-results'];
+            
+            navs.forEach(id => {
+                const el = document.getElementById(id);
+                if (unlocked) {
+                    el.classList.remove('locked');
+                    el.innerHTML = el.innerHTML.replace('🔒 ', '');
+                } else {
+                    el.classList.add('locked');
+                    if (!el.innerHTML.includes('🔒')) {
+                        el.innerHTML = '🔒 ' + el.innerHTML;
+                    }
+                }
+            });
+        }
+
+        // ==========================================
+        // LOGIN & LOGOUT HANDLING
+        // ==========================================
+        function handleLogin() {
+            const nameInput = document.getElementById('studentNameInput').value.trim();
+            if (!nameInput) {
+                showToast('⚠️ กรุณากรอกชื่อ–นามสกุล ก่อนเข้าสู่บทเรียน');
+                return;
+            }
+
+            state.studentName = nameInput;
+            saveLocalStorage();
+            showToast(`👋 ยินดีต้อนรับ คุณ${state.studentName}`);
+            initApp();
+        }
+
+        function confirmLogout() {
+            document.getElementById('logoutModal').classList.add('active');
+        }
+
+        function closeLogoutModal() {
+            document.getElementById('logoutModal').classList.remove('active');
+        }
+
+        function executeLogout() {
+            localStorage.clear();
+            state = {
+                studentName: "",
+                preTestCompleted: false,
+                preTestScore: 0,
+                postTestCompleted: false,
+                postTestScore: 0,
+                gameScore: 0,
+                currentPreIndex: 0,
+                currentPostIndex: 0,
+                preQuestions: [],
+                postQuestions: [],
+                timerInterval: null,
+                timerValue: 20
+            };
+            clearInterval(state.timerInterval);
+            closeLogoutModal();
+            document.getElementById('studentNameInput').value = '';
+            showToast('🚪 ออกจากระบบและล้างข้อมูลเรียบร้อยแล้ว');
+            initApp();
+        }
+
+        // ==========================================
+        // NAVIGATION & TABS
+        // ==========================================
+        function switchNav(target) {
+            if (target !== 'pretest' && !state.preTestCompleted) {
+                showToast('🔒 กรุณาทำแบบทดสอบก่อนเรียนให้เสร็จสิ้นก่อน');
+                return;
+            }
+
+            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+            const activeNav = document.getElementById(`nav-${target}`);
+            if (activeNav) activeNav.classList.add('active');
+
+            switchView(`view-${target}`);
+
+            if (target === 'game') initGame();
+            if (target === 'posttest' && !state.postTestCompleted && state.postQuestions.length === 0) startPostTest();
+            if (target === 'results') renderResults();
+        }
+
+        function switchView(viewId) {
+            document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
+            const targetView = document.getElementById(viewId);
+            if (targetView) targetView.classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            event.currentTarget.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        }
+
+        // ==========================================
+        // PRE-TEST & POST-TEST LOGIC
+        // ==========================================
+        function shuffleArray(arr) {
+            return arr.map(a => ({ sort: Math.random(), value: a }))
+                      .sort((a, b) => a.sort - b.sort)
+                      .map(a => a.value);
+        }
+
+        function startPreTest() {
+            if (state.preTestCompleted) {
+                document.getElementById('pretestQuestionArea').style.display = 'none';
+                document.getElementById('pretestCompletedArea').style.display = 'block';
+                return;
+            }
+
+            // Standard order for pre-test
+            state.preQuestions = JSON.parse(JSON.stringify(QUESTIONS_BASE));
+            state.currentPreIndex = 0;
+            state.preTestScore = 0;
+            renderQuizQuestion('pre');
+        }
+
+        function startPostTest() {
+            if (state.postTestCompleted) {
+                document.getElementById('posttestQuestionArea').style.display = 'none';
+                document.getElementById('posttestCompletedArea').style.display = 'block';
+                return;
+            }
+
+            // Shuffle questions AND shuffle options for post-test
+            let shuffledQ = shuffleArray(JSON.parse(JSON.stringify(QUESTIONS_BASE)));
+            shuffledQ.forEach(q => {
+                const correctText = q.options[q.answer];
+                q.options = shuffleArray(q.options);
+                q.answer = q.options.indexOf(correctText);
+            });
+
+            state.postQuestions = shuffledQ;
+            state.currentPostIndex = 0;
+            state.postTestScore = 0;
+            renderQuizQuestion('post');
+        }
+
+        function renderQuizQuestion(type) {
+            clearInterval(state.timerInterval);
+            state.timerValue = 20;
+
+            const isPre = type === 'pre';
+            const questions = isPre ? state.preQuestions : state.postQuestions;
+            const index = isPre ? state.currentPreIndex : state.currentPostIndex;
+
+            if (index >= questions.length) {
+                finishQuiz(type);
+                return;
+            }
+
+            const q = questions[index];
+            const timerEl = document.getElementById(isPre ? 'pretestTimer' : 'posttestTimer');
+            const progressEl = document.getElementById(isPre ? 'pretestProgressText' : 'posttestProgressText');
+            const qTextEl = document.getElementById(isPre ? 'pretestQuestionText' : 'posttestQuestionText');
+            const container = document.getElementById(isPre ? 'pretestOptionsContainer' : 'posttestOptionsContainer');
+
+            timerEl.textContent = state.timerValue;
+            progressEl.textContent = `ข้อที่ ${index + 1} จาก ${questions.length}`;
+            qTextEl.textContent = `${index + 1}. ${q.question}`;
+
+            container.innerHTML = '';
+            const labels = ['ก', 'ข', 'ค', 'ง'];
+
+            q.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.innerHTML = `
+                    <span class="opt-badge">${labels[idx]}</span>
+                    <span>${opt}</span>
+                `;
+                btn.onclick = () => handleAnswer(type, idx);
+                container.appendChild(btn);
+            });
+
+            // Start 20s countdown
+            state.timerInterval = setInterval(() => {
+                state.timerValue--;
+                timerEl.textContent = state.timerValue;
+                if (state.timerValue <= 0) {
+                    clearInterval(state.timerInterval);
+                    showToast('⏱️ หมดเวลา! ระบบเปลี่ยนไปข้อถัดไป');
+                    handleAnswer(type, -1); // Timeout = wrong
+                }
+            }, 1000);
+        }
+
+        function handleAnswer(type, selectedIndex) {
+            clearInterval(state.timerInterval);
+            const isPre = type === 'pre';
+            const questions = isPre ? state.preQuestions : state.postQuestions;
+            const index = isPre ? state.currentPreIndex : state.currentPostIndex;
+            const q = questions[index];
+
+            if (selectedIndex === q.answer) {
+                if (isPre) state.preTestScore++;
+                else state.postTestScore++;
+            }
+
+            if (isPre) state.currentPreIndex++;
+            else state.currentPostIndex++;
+
+            renderQuizQuestion(type);
+        }
+
+        function finishQuiz(type) {
+            const isPre = type === 'pre';
+            if (isPre) {
+                state.preTestCompleted = true;
+                saveLocalStorage();
+                updateLockState();
+                updateHeaderScore();
+                document.getElementById('pretestQuestionArea').style.display = 'none';
+                document.getElementById('pretestCompletedArea').style.display = 'block';
+                showToast('🎉 ทำแบบทดสอบก่อนเรียนเสร็จสิ้นแล้ว!');
+            } else {
+                state.postTestCompleted = true;
+                saveLocalStorage();
+                updateHeaderScore();
+                document.getElementById('posttestQuestionArea').style.display = 'none';
+                document.getElementById('posttestCompletedArea').style.display = 'block';
+                showToast('🌟 ทำแบบทดสอบหลังเรียนเสร็จสิ้นแล้ว!');
+            }
+        }
+
+        // ==========================================
+        // INTERACTIVE MATCHING GAME LOGIC
+        // ==========================================
+        let selectedDragId = null;
+
+        function initGame() {
+            const dragContainer = document.getElementById('dragItemsContainer');
+            const dropContainer = document.getElementById('dropTargetsContainer');
+            dragContainer.innerHTML = '';
+            dropContainer.innerHTML = '';
+
+            // Shuffle display items
+            const shuffledDrags = shuffleArray([...MATCHING_DATA]);
+            const shuffledDrops = shuffleArray([...MATCHING_DATA]);
+
+            shuffledDrags.forEach(item => {
+                const el = document.createElement('div');
+                el.className = 'draggable-item';
+                el.draggable = true;
+                el.dataset.id = item.id;
+                el.textContent = item.name;
+
+                // Drag Events
+                el.addEventListener('dragstart', (e) => {
+                    e.dataTransfer.setData('text/plain', item.id);
+                    el.classList.add('selected');
+                });
+                el.addEventListener('dragend', () => {
+                    el.classList.remove('selected');
+                });
+
+                // Mobile/Click selection fallback
+                el.addEventListener('click', () => {
+                    document.querySelectorAll('.draggable-item').forEach(d => d.classList.remove('selected'));
+                    selectedDragId = item.id;
+                    el.classList.add('selected');
+                    showToast(`เลือกระบุ: ${item.name} (แตะตอบฝั่งขวา)`);
+                });
+
+                dragContainer.appendChild(el);
+            });
+
+            shuffledDrops.forEach(target => {
+                const el = document.createElement('div');
+                el.className = 'drop-target';
+                el.dataset.id = target.id;
+                el.textContent = target.targetText;
+
+                // Drop Events
+                el.addEventListener('dragover', (e) => {
+                    e.preventDefault();
+                    el.classList.add('hovered');
+                });
+                el.addEventListener('dragleave', () => {
+                    el.classList.remove('hovered');
+                });
+                el.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    el.classList.remove('hovered');
+                    const draggedId = parseInt(e.dataTransfer.getData('text/plain'), 10);
+                    checkMatch(draggedId, target.id, el);
+                });
+
+                // Mobile Click Target
+                el.addEventListener('click', () => {
+                    if (selectedDragId) {
+                        checkMatch(selectedDragId, target.id, el);
+                        selectedDragId = null;
+                        document.querySelectorAll('.draggable-item').forEach(d => d.classList.remove('selected'));
+                    }
+                });
+
+                dropContainer.appendChild(el);
+            });
+
+            updateGameScoreDisplay();
+        }
+
+        function checkMatch(draggedId, targetId, targetEl) {
+            if (targetEl.classList.contains('correct')) return;
+
+            if (draggedId === targetId) {
+                targetEl.classList.add('correct');
+                targetEl.innerHTML += ' ✅ (ถูกต้อง! 🎉)';
+                
+                // Disable drag source
+                const dragEl = document.querySelector(`.draggable-item[data-id="${draggedId}"]`);
+                if (dragEl) dragEl.classList.add('matched');
+
+                state.gameScore++;
+                saveLocalStorage();
+                updateGameScoreDisplay();
+                showToast('ถูกต้อง! 🎉');
+            } else {
+                targetEl.classList.add('incorrect');
+                showToast('ลองอีกครั้งนะ 😊');
+                setTimeout(() => {
+                    targetEl.classList.remove('incorrect');
+                }, 800);
+            }
+        }
+
+        function updateGameScoreDisplay() {
+            document.getElementById('gameScoreText').textContent = `คะแนนเกม: ${state.gameScore} / ${MATCHING_DATA.length}`;
+        }
+
+        function resetGame() {
+            state.gameScore = 0;
+            saveLocalStorage();
+            initGame();
+            showToast('🔄 รีเซ็ตเกมจับคู่เรียบร้อย');
+        }
+
+        // ==========================================
+        // LEARNING RESULTS & EVALUATION
+        // ==========================================
+        function renderResults() {
+            document.getElementById('resStudentName').textContent = state.studentName;
+            document.getElementById('resPreScore').textContent = `${state.preTestScore} / 10`;
+            document.getElementById('resPostScore').textContent = `${state.postTestScore} / 10`;
+            document.getElementById('resGameScore').textContent = state.gameScore;
+
+            // Animate progress bars
+            const prePct = (state.preTestScore / 10) * 100;
+            const postPct = (state.postTestScore / 10) * 100;
+            document.getElementById('barPreScore').style.width = `${prePct}%`;
+            document.getElementById('barPostScore').style.width = `${postPct}%`;
+
+            // Growth calculation
+            const diff = state.postTestScore - state.preTestScore;
+            const growthBadge = document.getElementById('resGrowthBadge');
+            if (diff > 0) {
+                growthBadge.textContent = `พัฒนาการ: +${diff} คะแนน 📈`;
+                growthBadge.style.background = '#E8F5E9';
+                growthBadge.style.color = '#2E7D32';
+            } else if (diff === 0) {
+                growthBadge.textContent = `พัฒนาการ: เท่าเดิม (0 คะแนน) ➖`;
+                growthBadge.style.background = '#FFF3E0';
+                growthBadge.style.color = '#E65100';
+            } else {
+                growthBadge.textContent = `พัฒนาการ: ${diff} คะแนน 📉`;
+                growthBadge.style.background = '#FFEBEE';
+                growthBadge.style.color = '#C62828';
+            }
+
+            // Quality Evaluation
+            const percentage = (state.postTestScore / 10) * 100;
+            const gradeEl = document.getElementById('resQualityGrade');
+            const feedbackEl = document.getElementById('resFeedbackMsg');
+
+            if (percentage >= 90) {
+                gradeEl.textContent = 'ดีเยี่ยม 🌟 (90–100%)';
+                feedbackEl.textContent = 'ยอดเยี่ยมมากๆ! คุณมีความเข้าใจในแหล่งท่องเที่ยวสำคัญของอำเภอพระแสงอย่างถ่องแท้ 🎉';
+            } else if (percentage >= 80) {
+                gradeEl.textContent = 'ดีมาก ⭐ (80–89%)';
+                feedbackEl.textContent = 'ยอดเยี่ยม! คุณมีพัฒนาการจากก่อนเรียนอย่างชัดเจน และมีความรู้ความเข้าใจในระดับสูง 🎉';
+            } else if (percentage >= 70) {
+                gradeEl.textContent = 'ดี 👍 (70–79%)';
+                feedbackEl.textContent = 'ทำได้ดี! คุณผ่านเกณฑ์การเรียนรู้และมีความเข้าใจในบทเรียนนี้เป็นอย่างดี';
+            } else if (percentage >= 60) {
+                gradeEl.textContent = 'พอใช้ 🙂 (60–69%)';
+                feedbackEl.textContent = 'ผ่านเกณฑ์ขั้นต่ำ ลองทบทวนเนื้อหาเพิ่มเติมอีกนิดเพื่อความชำนาญยิ่งขึ้นนะ';
+            } else {
+                gradeEl.textContent = 'ควรพัฒนา 💪 (ต่ำกว่า 60%)';
+                feedbackEl.textContent = 'พยายามต่อไปนะ! ลองกลับไปทบทวนเนื้อหาในบทเรียนแล้วกลับมาทำแบบทดสอบอีกครั้ง 💪';
+            }
+        }
+
+        // Helper Toast Notification
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            toast.textContent = msg;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+    </script>
+
+</body></html>
